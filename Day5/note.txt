@@ -1,0 +1,16 @@
+belajar tentang penambahan date
+silahkan cek tentang date di w3school (https://www.w3schools.com/js/js_dates.asp)
+curent milis = untuk ngecek milisecond sekarang; kalo sudah berkaitan dengan data/database
+biasanya data menggunakan jam utc atau jam gmt skrg
+case day dan month menggunakan itungan index maka dari itu jumat index ke 5 dan november index ke 10
+ps. index itu dimulai dari 0
+mempelajari date untuk di konversi dalam function
+additional dari mentor belajar untuk waktu realtime
+math floor -- > dibulatkan kebawah
+math round --> dibulatkan
+math ceil --> dibulatkan keatas
+
+tasknya bikin datenya 
+perhari
+perbulan
+pertahun

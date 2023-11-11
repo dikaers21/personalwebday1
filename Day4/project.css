@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-contact {
+    background-color: #111727;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #f4f3f3;
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.div-btn {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    align-items: center;
+}
+
+.project-form {
+    background-color: #e3e7eb;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-form .form-container {
+    width: 500px;
+}
+
+.project-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-form form label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.checkbox-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 10px;
+}
+
+#checkbox1,
+#checkbox2,
+#checkbox3,
+#checkbox4 {
+    width: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* .wrap {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.project-form form input,
+textarea,
+select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.project-form form textarea {
+    height: 250px;
+}
+
+.project-form form .input-project-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-form form .input-project-image-group label p {
+    font-size: 15px;
+}
+
+.project-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-form form .button-group {
+    text-align: right;
+}
+
+
+/* dibawah ini tombol submit */
+
+.project-form form button {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 5px 5px;
+    background-color: #111727;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    border-radius: 60px;
+    border: none;
+}
+
+.project hr {
+    border: 1px solid #dbdbdb;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ini kumpulan project list */
+
+.project-list {
+    width: auto;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-list-item {
+    max-width: 200px;
+}
+
+.img-item {
+    width: 100%;
+    height: 100%;
+}
