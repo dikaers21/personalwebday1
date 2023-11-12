@@ -3,6 +3,8 @@
 <head>
     <title>My Project</title>
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -34,8 +36,8 @@
                 <form onsubmit="submitproject(event)">
                     <h1>Add My Project</h1>
                     <div>
-                        <label for="inputTitle">Project Name</label>
-                        <input type="text" id="inputTitle" />
+                        <label for="inputProject">Project Name</label>
+                        <input type="text" id="inputProject" />
                     </div>
                     <div class="date-container">
                         <div style="margin-right: 2rem; width: 50%;">
@@ -44,34 +46,34 @@
                         </div>
                         <div>
                             <label for="endDate">End Date</label>
-                            <input type="date" id="" />
+                            <input type="date" id="endDate" />
                         </div>
                     </div>
                     <div>
-                        <label for="checkbox">Technologies</label>
+                        <label>Technologies</label>
                     </div>
                     <div class="checkbox-grid">
                         <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox1">
+                            <input type="checkbox" id="nodejs">
                             <label for="checkbox1">Node Js</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox2">
+                            <input type="checkbox" id="reactjs">
                             <label for="checkbox2">React Js</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox3">
+                            <input type="checkbox" id="nextjs">
                             <label for="checkbox3">Next Js</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox4">
+                            <input type="checkbox" id="typescript">
                             <label for="checkbox4">TypeScript</label>
                         </div>
                     </div>
 
                     <div>
-                        <label for="inputContent">Descriptions</label>
-                        <textarea id="inputContent"></textarea>
+                        <label for="inputDesc">Descriptions</label>
+                        <textarea id="inputDesc"></textarea>
                     </div>
                     <div>
                         <label>Upload Image</label>
@@ -89,11 +91,16 @@
                 </form>
             </div>
         </div>
-
         <hr class="line" />
+        <div class="my-project">
+            <h1>My Project</h1>
+        </div>
+
+
         <div id="contents" class="project-list">
         </div>
     </div>
+
     <script src="project.js"></script>
 </body>
 
