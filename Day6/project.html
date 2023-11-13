@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav style="background-color: #f4f3f3; height: 75px;">
+        <div style="display: flex; align-items: center; height: 100%; margin-left: 30px; margin-right: 30px;">
+            <ul style="display: flex; list-style-type: none; gap: 50px; align-items: center;">
+                <li>
+                    <img src="assets/image/dumbways.png" style="height: 50px;" />
+                </li>
+                <li class="nav-link">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="project.html">
+                        My Project
+                    </a>
+                </li>
+            </ul>
+            <div style="display: flex; width: 100%; justify-content: end;">
+                <a href="contact.html" class="btn-contact">Contact me</a>
+                <i class="fa-solid fa-bars fa-2xl" style="cursor: pointer;" id="icon-point"></i>
+            </div>
+
+
+        </div>
+    </nav>
+    <div class="navbar-mobile">
+        <a href="index.html">Home</a>
+        <a class="navbar-a" href="project.html">My Project</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    <div class="project">
+        <div class="project-form">
+            <div class="form-container">
+                <form onsubmit="submitproject(event)">
+                    <h1>Add My Project</h1>
+                    <div>
+                        <label for="inputProject">Project Name</label>
+                        <input type="text" id="inputProject" />
+                    </div>
+                    <div class="date-container">
+                        <div style="margin-right: 2rem; width: 50%;">
+                            <label for="startDate">Start Date</label>
+                            <input type="date" id="startDate" />
+                        </div>
+                        <div style="width: 50%;">
+                            <label for="endDate">End Date</label>
+                            <input type="date" id="endDate" />
+                        </div>
+                    </div>
+                    <div>
+                        <label>Technologies</label>
+                    </div>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="nodejs">
+                            <label for="checkbox1">Node Js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="reactjs">
+                            <label for="checkbox2">React Js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="nextjs">
+                            <label for="checkbox3">Next Js</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="typescript">
+                            <label for="checkbox4">TypeScript</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="inputDesc">Descriptions</label>
+                        <textarea id="inputDesc"></textarea>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-project-image-group">
+                            <label for="inputImage">
+                                <p>Attach File</p>
+                                <img src="assets/icon/file.png" alt="file" />
+                            </label>
+                            <input type="file" id="inputImage" hidden />
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="line" />
+        <div class="my-project">
+            <h1>My Project</h1>
+        </div>
+
+
+        <div id="contents" class="project-list">
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
