@@ -1,0 +1,126 @@
+OOP
+biasa digunakan di kantor(dalam suatu pekerjaan)
+functional --> seperti function yang dari kemarin kita pakai
+object --> kaya manusia beraneka ragam, baju apa dan lain2
+method (kata kerja)-->> sama aja (properti=kata benda) bisa apa bisa ngoding bisa jalan
+
+belajar utk coba2 js ada di javascript compiler di google
+
+kalau mau bikin class
+
+//ini konsep class
+class Car{ //pascalCase
+                //parameter
+    constructor(make, model) {
+        this.make = make
+        this.model= model
+    }
+
+    getInfo(){
+        return `The car is a ${this.make} ${this.model}`
+    }
+}
+
+
+      //ini konsep object == inisiasi
+class Car{ //pascalCase
+                //parameter
+    constructor(make, model) {
+        this.make = make
+        this.model= model
+    }
+
+    getInfo(){
+        return `The car is a ${this.make} ${this.model}`
+    }
+}     
+const car1 = new Car("Toyota","Camry")
+const car2 = new Car("Honda", "Brio")
+
+new adalah merupakan object yang ingin di cetak
+
+//konsep inheritence
+class Car{ 
+                //parameter
+    constructor(make, model) {
+        this.make = make
+        this.model= model
+    }
+
+    getInfo(){
+        return `The car is a ${this.make} ${this.model}`
+    }
+}
+
+class ElectricCar extends Car{
+    constructor(make, model, batteryCapacity){
+        super(make, model)
+        this.batteryCapacity = batteryCapacity
+    }
+
+    getInfo(){
+        return `${super.getInfo()}. it has a battery of 
+        ${this.batteryCapacity = batteryCapacity} Kwh`
+    }
+
+}
+
+const electricCar1 =  
+
+
+//konsep polumorphism === override -> menimpa
+
+class Venicle {
+    drive() {
+        return `The vehicle is driving`
+    }
+}
+
+class Car extends Venicle{
+    drive(){
+        return `The car is driving`
+    }
+}
+
+class ElectricCar extends Car {
+    drive() {
+        return `The electric car is driving silently `
+    }
+}
+
+const venicle = new Venicle()
+const car = new Car()
+const electricCar = new ElectricCar()
+
+
+// Abstraction konsep
+
+class Car{
+    isRunning = false
+
+    constructor(make, model) {
+        this.make = make
+        this.model = model
+    }
+
+    start(){
+        this.isRunning = true
+    }
+
+    stop() {
+        this.isRunning = false
+    }
+
+    getInfo() {
+        return `${this.make} ${this.make} is now ${this.isRunning}`
+    }
+}
+
+const car1 = new Car("toyota", "Camry")
+car1.start()
+car1.stop() 
+
+
+
+//Encapsulation konsep
+
