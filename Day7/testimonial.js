@@ -16,9 +16,9 @@ class Testimonial {
 }
 
 
-const testimonial1 = new Testimonial("Ers", "Sangat menakjubkan pemandangan ini", "https://images.pexels.com/photos/2187605/pexels-photo-2187605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
-const testimonial2 = new Testimonial("Rama", "Indah sekali saya tak bisa berkata kata", "https://images.pexels.com/photos/390490/pexels-photo-390490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
-const testimonial3 = new Testimonial("Rico", "Aku senang bisa ada disini", "https://images.pexels.com/photos/2555803/pexels-photo-2555803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+const testimonial1 = new Testimonial("Ers", "Sangat menakjubkan website ini!", "https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=1600")
+const testimonial2 = new Testimonial("Rama", "Styling yang menarik dari website ini", "https://images.pexels.com/photos/1816654/pexels-photo-1816654.jpeg?auto=compress&cs=tinysrgb&w=1600")
+const testimonial3 = new Testimonial("Rico", "Aku senang mengunjungi web ini", "https://images.pexels.com/photos/7129700/pexels-photo-7129700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
 
 const testimonials = [testimonial1, testimonial2, testimonial3]
 
