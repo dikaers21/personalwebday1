@@ -1,0 +1,105 @@
+Async, Promises and Ajax
+
+*perbedaan task day9 dan  day8 adalah di datanya
+day9 datanya dari internet sedangkan day8 datanya ada dicodingan
+
+
+
+
+Asynchronous
+
+menjalankan program dengan waktu bersamaan tanpa harus menunggu program yg lain untuk di eksekusi lebih dahulu.
+
+console.log("Halo")
+setTimeout(() => {
+    console.log("Halo 2")
+}, 1000)
+)
+
+
+
+PROMISES
+
+- berbentuk class
+- the Promise object supports two properties: state and result
+
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+// some code (try to change x to 5)
+
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+
+
+const janji = new Promise((resolve, reject) => {
+    const hujan = true
+
+    if(hujan){
+        reject("Gak jadi main bola")
+    } else {
+        resolve("Jadi main bola")
+    }
+
+})
+
+
+janji.then((hasil) => {
+    console.log(hasil)
+}).catch((error){           | // }), {error} //
+    console.log(error)      |
+})
+
+Async Await
+
+
+The keyword async before a function makes the function return a promise:
+kalo mau ada await harus ada async
+
+
+Ajax
+
+
+
+definisi : sebuah teknik dalam js untuk berinteraksi dengan request Asynchronous -> ketika mengambil data di internet
+
+syntax =
+const xhttp = new XMLHttpRequest()
+
+xhttp.open('GET', 'https://urlkamu', true)
+
+// param 1 : method
+// param 2 : url -> Tujuannya
+// param 3 : true or false, true - > Asynchronous, berjalan dilayar secara paralel, false -> sychronous, blocking jika proses belum selesai
+
+xhttp.onload = () => {
+    if(xhttp.status === 200){
+    console,log(xhttp.response)
+
+    } else {
+        console.log("server mereka error)
+    }
+}
+
+xhttp.onerror - () => { //error dikitanya, misal ambil data dari internet, misal facebook.com -> fetching/get ke mereka, tapi internet kita mati di tengah jalan
+    console.log("network error")
+}
+
+
+belajar ttg file.json untuk menyimpan
+dikasi tau ttg npoint.io
+JSON.PARSE = STRING MENJADI object
+STRINGFY = OBJECT MENJADI STRING
