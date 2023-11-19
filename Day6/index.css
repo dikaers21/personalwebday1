@@ -64,6 +64,19 @@
     .btn-contact {
         display: none;
     }
+    .flex-container {
+        margin: 100px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        font-size: large;
+    }
+    .container {
+        display: none;
+    }
 }
 
 .flex-container {
