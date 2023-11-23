@@ -1,0 +1,29 @@
+Bootstrap
+
+framework untuk css  memudahkan kita melakukan styling website
+adakalanya gabisa di styling warna di Bootstrap diselesaikan dengan external css kalo masi gabisa langsung pake syntax !important
+memudahkan styling
+*SPILL DARI KAKAK MENTOR BUAT challange buat ngelatih css
+yt : kevin powell
+
+
+Node js
+suatu runtime 2 elemen penting 
+1. download package 
+2. running server
+
+*ketika download package orang harus menyesuaikan dengan versi node nanti di dunia kerja
+
+
+Express Js
+framework untuk mempermudah penggunaan nodejs
+penginstalan express dengan (npm i express)
+running project express menggunakan terminal
+
+*atribut require
+untuk memanggil package
+
+
+*untuk tidak usah mengupload node_modules
+ gitignore
+ node_modules
