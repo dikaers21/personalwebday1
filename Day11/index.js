@@ -11,7 +11,7 @@ app.use(express.static('src/assets'))
 app.use(express.urlencoded({ extended: false }))
 
 
-app.get('/', home)
+app.get('/home', home)
 app.get('/project', project)
 app.post('/project', addProject)
 app.get('/contact', contact)
