@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="/css/project-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="div">
+            <ul class="ul">
+                <li>
+                    <img src="/image/dumbways.png" style="height: 50px;" />
+                </li>
+                <li class="nav-link">
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="/myproject">
+                        My Project
+                    </a>
+                </li>
+            </ul>
+            <div class="div-btn">
+                <a href="/contact" class="btn-contact">Contact me</a>
+            </div>
+        </div>
+    </nav>
+    <div class="project-detail">
+        <div class="project-detail-container">
+            <h1 class="h1">{{data.id}} | {{data.name}}</h1>
+            <div class="flexcomp">
+                <div class="column1">
+                    <img class="img" src="/image/{{data.image}}" alt="detail" />
+                </div>
+                <div class="column2">
+                    <div>
+                        <div class="sectitle">
+                            Duration
+                        </div>
+                        <div style="margin-bottom: 10px;">
+                            <span><i class="fa-solid fa-calendar-days"></i></span> 12 Jan 2021 - 11 Feb 2021 1 month
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-clock"></i></span> 1 Month
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sectitle">
+                            Technologies
+                        </div>
+                        <div class="flexcomp">
+                            <div style="margin-right: 40px;">
+                                <div style="margin-bottom: 10px;">
+                                    <span><i class="fa-brands fa-react"></i></span> React Js
+                                </div>
+                                <div>
+                                    <span><i class="fa-brands fa-node-js"></i></span> Node Js
+                                </div>
+                            </div>
+                            <div>
+                                <div style="margin-bottom: 10px;">
+                                    <span><i class="fa-brands fa-js"></i></span> JavaScript
+                                </div>
+                                <div>
+                                    <span><i class="fa-solid fa-bolt"></i></span> Socket IO
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <p>
+                    {{data.description}}
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
