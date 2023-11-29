@@ -42,7 +42,7 @@ function project(req, res) {
 }
 
 async function addProject(req, res) {
-    const { title, content } = req.body
+    const { name, description } = req.body
     const image = "atlas.jpg"
 
     // console.log("Title :", title)
@@ -51,7 +51,7 @@ async function addProject(req, res) {
     // const dataProject = { title, content }
 
     // data.unshift(dataProject)
-    const query = `INSERT INTO projects(name,description,image) VALUES ('${title}', '${content}','${image}')`
+    const query = `INSERT INTO projects(name,description,image) VALUES ('${name}', '${description}','${image}')`
     const obj = await sequelize.query(query, { type: QueryTypes.INSERT })
 
     console.log("data berhasil di input", obj)
@@ -70,18 +70,18 @@ async function updateProjectView(req, res) {
 }
 
 async function updateProject(req, res) {
-    const { title, content, id } = req.body
+    const { name, description, id } = req.body
 
     console.log("Id :", id)
-    console.log("Title :", title)
-    console.log("Content :", content)
+    console.log("Title :", name)
+    console.log("Content :", description)
 
     // data[parseInt(id)] = {
     //     title,
     //     content,
     // }
 
-    const query = `UPDATE projects SET name='${title}', description='${content}' WHERE id=${id}`
+    const query = `UPDATE projects SET name='${name}', description='${description}' WHERE id=${id}`
     const obj = await sequelize.query(query, { type: QueryTypes.UPDATE })
 
     console.log("project berhasil di update!", obj)
