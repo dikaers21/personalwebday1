@@ -77,11 +77,6 @@ function updateProject(req, res) {
     res.redirect('myproject')
 }
 
-
-
-
-
-
 async function myProject(req, res) {
     const query = 'SELECT * FROM projects'
     const obj = await sequelize.query(query, { type: QueryTypes.SELECT })
@@ -97,9 +92,6 @@ async function myProject(req, res) {
 //     alert("Content :", content)
 //     res.redirect('myproject')
 // }
-
-
-
 
 function deleteProject(req, res) {
     const { id } = req.params

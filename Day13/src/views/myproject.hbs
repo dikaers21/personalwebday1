@@ -45,9 +45,11 @@
             {{#each data }}
             <div class="col">
                 <div class="card" style="width: 18rem;">
-                    <img src="/image/project-img.png" class="card-img-top" alt="...">
+                    <img src="/image/{{this.image}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">{{this.name}}</h5>
+                        <h5 class="card-title">
+                            <a href="/project-details">{{this.name}}</a>
+                            </h5>
                         <p class="fs-6">Durasi : 3 Bulan</p>
                         <i class="fa-brands fa-node-js"></i>
                         <i class="fa-brands fa-react"></i>
